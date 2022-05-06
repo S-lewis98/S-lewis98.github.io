@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+*
+{
+    padding: .20em;
+    margin: .20em;
+}
+$accent1: teal;
+$accent2: gold;
+$fontfam: 'Water Brush', cursive;
+
+h1
+{   
+    display: flex;
+    justify-content: center;
+    font-family: $fontfam;
+    font-size: 8em;
+    color: $accent2;
+}
+body
+{
+    background-color:  $accent1;
+}
+#second{
+    display: flex;
+    align-items: flex-end;
+}
+p{
+    font-size: large;
+}

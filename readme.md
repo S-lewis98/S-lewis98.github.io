@@ -1,2 +1,2 @@
-# My Oonline Profile
+# My Online Profile
 ## Scott Lewis

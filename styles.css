@@ -1,19 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 * {
-  padding: .20em;
-  margin: .20em;
-}
-
-h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: "Water Brush", cursive;
-  font-size: 8em;
-  color: gold;
+  padding: .40em;
+  margin: .40em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -31,5 +21,96 @@ body {
 
 p {
   font-size: large;
+}
+
+.box {
+  position: relative;
+  width: 150px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: teal;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 180%;
+  background: gold;
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.box::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: teal;
+  border-radius: 16px;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.box h1 {
+  position: relative;
+  color: gold;
+  font-size: 4em;
+  z-index: 10;
+}
+
+h1 {
+  font-family: "Water Brush", cursive;
+  color: gold;
+}
+
+#second {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#inter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -12,72 +12,23 @@ $fontfam: 'Water Brush', cursive;
 
 body
 {
-    background-color:  $accent1;
+  background-image: url("back.jpg");
+  background-size: cover;
    
     
 }
-#second{
-    display: flex;
-    align-items: flex-end;
-}
-p{
+
+
+p
+{
     font-size: large;
-}
-.box 
-{
-  position: relative;
-  width: 150px;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $accent1;
-  overflow: hidden;
-  border-radius: 20px;
-}
-.box::before 
-{
-  content: '';
-  position: absolute;
-  width: 100px;
-  height: 180%;
-  background: $accent2;
-  animation: animate 4s linear infinite;
-}
-.box::after 
-{
-  content: '';
-  position: absolute;
-  inset: 4px;
-  background: $accent1 ;
-  border-radius: 16px;
-
-}
-@keyframes animate
-{
-    0%
-    {
-      transform: rotate(0deg);
-    }
-    100%
-    {
-      transform: rotate(360deg);
-    }
-}
-.box h1 
-{
-  position: relative;
-  color: $accent2;
-  font-size: 4em;
-  z-index: 10;
-
 }
 h1
 {   
     
     
     font-family: $fontfam;
-    
+    font-size: 10em;
     color: $accent2;
 }
 #second
@@ -99,3 +50,4 @@ h1
     justify-content: center;
     align-items: center;
 }
+
